@@ -1,0 +1,29 @@
+@url = http://localhost:3001/api/movies
+
+### Get movies list
+GET {{url}}/get-movies-list 
+
+
+### Search movie 
+GET {{url}}/search-movies
+Content-Type: application/json
+
+{
+    "keyword": "The"
+}
+
+### Get movie details
+GET {{url}}/get-movie-details
+Content-Type: application/json
+
+{
+    "movie_id": 4
+}
+
+### Get screening schedule
+GET {{url}}/get-screenings-schedule
+Content-Type: application/json
+
+{
+    "movie_id": 1
+}
